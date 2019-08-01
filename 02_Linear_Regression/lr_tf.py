@@ -39,7 +39,7 @@ training_epochs = 1000
 y_pred = tf.add(tf.multiply(X, W), b)
 
 # Mean Squared Error Cost Function
-cost = tf.reduce_sum(tf.pow(y_pred-Y, 2)) / (2 * n)
+cost = tf.reduce_sum(tf.square(y_pred-Y)) / (2 * n)
 
 # Gradient Descent Optimizer
 optimizer = tf.train.GradientDescentOptimizer(learning_rate).minimize(cost)
