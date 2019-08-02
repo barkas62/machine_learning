@@ -21,8 +21,7 @@ from sklearn.preprocessing   import StandardScaler
 # hyperparams
 alpha     = 0.00001
 tolerance = 0.000001
-max_iter  = 1000000
-
+max_iter  = 1000
 # get training data
 x_all, y_all = dg.set_train_data(10000)
 x_train, x_test, y_train, y_test = train_test_split(x_all.T, y_all.T, random_state=0)
