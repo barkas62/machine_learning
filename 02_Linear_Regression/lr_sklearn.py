@@ -30,6 +30,7 @@ if not add_ones:
     w = np.append(w, lr.intercept_)
 w = w[:, np.newaxis]
 
+
 y_err = np.square(y_test[:,  np.newaxis] - x_test.dot(w))
 y_var = np.square(y_test[:,  np.newaxis] - np.mean(y_test))
 r2 = 1. - np.sum(y_err)/np.sum(y_var)
