@@ -17,6 +17,8 @@ def set_train_data(data_size = 50, add_ones = True, var = 0.1):
     y += np.random.uniform(-var, +var, data_size)
     return x, y
 
+# def set_train_data(data_size = 50, add_ones = True, var = 0.1):
+
 
 def show_data(x, y, w = None):
     # Plot of Training Data
