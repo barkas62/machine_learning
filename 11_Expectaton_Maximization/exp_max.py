@@ -124,7 +124,7 @@ class ExpMax_1D:
             cur_L = self.loglike()
             if abs(cur_L-prv_L) < eps:
                 break
-        
+
 
 
 
